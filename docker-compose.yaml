@@ -1,0 +1,9 @@
+
+services:
+  service:
+    image: nginx
+    restart: always
+    ports:
+      - 8000:80
+    volumes:
+      - /ia-service:/usr/share/nginx/html
